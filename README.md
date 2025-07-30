@@ -75,11 +75,11 @@ The project collects data from multiple DAO platforms and standardizes it into a
 ### Supported Platforms
 
 Currently collecting data from:
-- Snapshot (2404+ deployments)
-- Aragon (84 deployments)
-- Moloch/DAOhaus (36 deployments)
-- Realms (18 deployments)
-- DAOstack (12 deployments)
+- Aragon
+- DAOstack
+- Moloch/DAOhaus
+- Realms
+- Snapshot
 - Tally
 
 Data sources:
