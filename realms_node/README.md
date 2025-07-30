@@ -1,4 +1,15 @@
-1. Get the list of ProgramIds from the realms homepage Next.js payload
+# Downloading Realms data with note
+
+## Why?
+
+The best way to access Realms data is through their
+[Realms JS SDK](https://www.npmjs.com/package/@solana/spl-governance). This
+approach goes against the structure for the rest of the platforms, which is
+broken down by platforms/organizations/proposals/votes.
+
+## How?
+
+1. First, get the list of ProgramIds from the realms homepage Next.js payload
 ```
 GovER5Lthms3bLBqWub97yVrMmEogzX7xNjdXpPPCVZw    228
 Ghope52FuF6HU3AAhJuAAyS2fiqbVhkAotb7YprL5tdS     10
@@ -33,12 +44,15 @@ bqTjmeob6XTdfh12px2fZq4aJMpfSY1R1nHZ44VgVZD       1
 3. Download all deployments for each `programId` (many just have one) (n=2287)
 4. Download all proposals for each deployment
 5. Download all votes for each proposal
-6. Format data in python
+6. Format the data in python
 
-## Docker
+## How? Using Docker
 
 The `downloadvotes.Dockerfile` file is configured to use Docker to download
 the votes.
+
+This can be deployed to a server or a container service as this is a long-running
+job.
 
 Build and run the image with:
 
